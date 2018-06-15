@@ -14,7 +14,7 @@ class AboutCommand extends commando.Command {
         
         
         
-        var msg = "Pod Nieboskłonem cienia \n \n \nJestem Bot Nieboskłon, śmigam na Heroku! \n&copy; 2018 by vabes.pl | ver 1.0.0";
+        var msg = ":night_with_stars: :night_with_stars: Pod Nieboskłonem cienia :night_with_stars: :night_with_stars: \n \n \nJestem Bot Nieboskłon, śmigam na Heroku! \n&copy; 2018 by vabes.pl | ver 1.0.0";
         
         message.channel.send({embed: {
           color: 3447003,
