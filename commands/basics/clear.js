@@ -31,7 +31,7 @@ class ClearCommand extends commando.Command {
             message.channel.sendMessage("\n--------------------------------------``` \n \n \n \n  ");*/
         
             message.channel.sendMessage(
-                "\n \n \n \n  - :x: ------------------------------------ :x: - \n             ** Usuwam " + fetched.size + " wiadomości... ** \n- :x: ------------------------------------ :x: - \n \n \n \n  "
+                "\n \n \n \n  -------------------------------------- \n                 ** Usuwam " + fetched.size + " wiadomości... ** \n-------------------------------------- \n \n \n \n  "
                 );
         
             const fetched_new = await message.channel.fetchMessages({limit: 100}); // This grabs the last number(args1) of messages in the channel.
