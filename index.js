@@ -15,5 +15,3 @@ bot.registry.registerCommandsIn(__dirname + "/commands");
 
 
 bot.login(token);
-
-client.login(token).catch(err => console.log(err));
