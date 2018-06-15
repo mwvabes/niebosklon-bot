@@ -5,7 +5,7 @@ class ClearCommand extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'clear',
-            group: 'arki',
+            group: 'basics',
             memberName: 'clear',
             description: 'Usuwa wiadomość'
         });
@@ -26,6 +26,7 @@ class ClearCommand extends commando.Command {
 
             const fetched = await message.channel.fetchMessages({limit: 100}); // This grabs the last number(args1) of messages in the channel.
 
+            message.channel.sendMessage("\n `-------------------` \n`-------------------` ");
             message.channel.sendMessage("Usuwam " + fetched.size + " wiadomości...");
         
             const fetched_new = await message.channel.fetchMessages({limit: 100}); // This grabs the last number(args1) of messages in the channel.
