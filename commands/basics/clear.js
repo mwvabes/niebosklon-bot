@@ -26,8 +26,9 @@ class ClearCommand extends commando.Command {
 
             const fetched = await message.channel.fetchMessages({limit: 100}); // This grabs the last number(args1) of messages in the channel.
 
-            message.channel.sendMessage("\n `-------------------` \n`-------------------` ");
+            message.channel.sendMessage("\n \n \n \n  `--------------------------------------");
             message.channel.sendMessage("Usuwam " + fetched.size + " wiadomości...");
+            message.channel.sendMessage("\n--------------------------------------` \n \n \n \n  ");
         
             const fetched_new = await message.channel.fetchMessages({limit: 100}); // This grabs the last number(args1) of messages in the channel.
             console.log(fetched_new.size + ' messages found, deleting...'); // Lets post into console how many messages we are deleting

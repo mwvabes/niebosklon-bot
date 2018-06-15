@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
 
-class CreditsCommand extends commando.Command {
+class AboutCommand extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'about',
@@ -11,11 +11,16 @@ class CreditsCommand extends commando.Command {
     }
     
     async run(message, args) {
+        
+        message.channel.sendMessage("`");
+        
         message.channel.sendMessage(
-            "`Pod Nieboskłonem cienia \n \n \nver 1.0.0`"
+            "Pod Nieboskłonem cienia \n \n \n Śmigam na Heroku! | ver 1.0.0"
         );
+        
+        message.channel.sendMessage("`");
 
     }
 }
 
-module.exports = CreditsCommand;
+module.exports = AboutCommand;
