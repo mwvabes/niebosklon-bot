@@ -14,7 +14,7 @@ class AboutCommand extends commando.Command {
         
         
         
-        var msg = ":lemon: :lemon:  **Pod Nieboskłonem cienia** :lemon: :lemon:  \n \n \nBot na deploy'u w Heroku! \n\n:copyright:  2018 by vabes.pl | ver 1.0.0";
+        var msg = ":lemon: :lemon:  **Pod Nieboskłonem cienia** :lemon: :lemon:  \n \n \nBot na deploy'u w Heroku + mLab AWS Europe! \n\n:copyright:  2018 by vabes.pl | ver 1.0.0";
         
         message.channel.send({embed: {
           /*color: 3447003,*/

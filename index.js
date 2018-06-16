@@ -1,7 +1,15 @@
 const commando = require('discord.js-commando');
 const bot = new commando.Client();
-
 const token = process.env.token;
+
+const MongoClient = require('mongodb').MongoClient;
+const dbconn = process.env.dbmongo;
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  console.log("Connected!");
+  db.close();
+});
 
 
 
