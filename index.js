@@ -5,9 +5,13 @@ const token = process.env.token;
 const MongoClient = require('mongodb').MongoClient;
 const dbconn = process.env.dbmongo;
 
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("Connected!");
+MongoClient.connect(dbconn, function(err, db) {
+  if (err) {
+      throw err;
+  } else {
+      console.log("Connected!");
+  }
+    
   db.close();
 });
 
