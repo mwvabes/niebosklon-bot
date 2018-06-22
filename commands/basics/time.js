@@ -15,11 +15,11 @@ class TimeCommand extends commando.Command {
         var h;
         var m;
         
-        if (m >= 0 && m <= 9) m = "0" + m;
-        
         var dd = new Date();
         h = dd.getHours();
         m = dd.getMinutes();
+      
+        if (m >= 0 && m <= 9) m = "0" + m;
         
         
         message.channel.sendMessage("Aktualna godzina to: " + h + ":" + m);
