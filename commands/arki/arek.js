@@ -38,3 +38,4 @@ class FeedCommand extends commando.Command {
 }
 
 module.exports = ArekCommand;
+module.exports = FeedCommand;
