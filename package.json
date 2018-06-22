@@ -12,5 +12,9 @@
     "discord.js": "^11.3.2",
     "discord.js-commando": "^0.10.0",
     "mongodb": "^3.0.10"
-  }
+  },
+  "scripts": {
+      "start": "node index.js"
+    }
+    
 }
