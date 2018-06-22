@@ -8,7 +8,7 @@ class ClearCommand extends commando.Command {
             group: 'basics',
             memberName: 'clear',
             description: 'Czyści okno czatu',
-            userPermissions: ['clear']
+            userPermissions: ['Admin']
         });
     }
     
