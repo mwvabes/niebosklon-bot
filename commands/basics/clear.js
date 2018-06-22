@@ -8,7 +8,7 @@ class ClearCommand extends commando.Command {
             group: 'basics',
             memberName: 'clear',
             description: 'Czyści okno czatu',
-            userPermissions: ['Admin']
+            //userPermissions: ['Admin']
         });
     }
     
@@ -50,6 +50,10 @@ class ClearCommand extends commando.Command {
 
             }, 2000);
     
+    }
+  
+    hasPermission(msg) {
+      message.channel.sendMessage("1")
     }
 }
 
