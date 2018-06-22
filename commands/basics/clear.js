@@ -52,9 +52,6 @@ class ClearCommand extends commando.Command {
     
     }
   
-    hasPermission(msg) {
-      message.channel.sendMessage("1")
-    }
 }
 
 module.exports = ClearCommand;
